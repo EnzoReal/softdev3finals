@@ -30,7 +30,7 @@ public class TeacherController {
     @GetMapping("/teachers/new")
     public String createTeacherForm(Model model) {
 
-        // create student object to hold teacher form data
+        // create teacher object to hold teacher form data
         Teacher teacher = new Teacher();
         model.addAttribute("teacher", teacher);
         return "create_teacher";
@@ -60,6 +60,8 @@ public class TeacherController {
         existingTeacher.setFirstName(teacher.getFirstName());
         existingTeacher.setLastName(teacher.getLastName());
         existingTeacher.setEmail(teacher.getEmail());
+        existingTeacher.setUsername(teacher.getUsername());
+        existingTeacher.setPassword(teacher.getPassword());
 
         // save updated teacher object
         teacherService.updateTeacher(existingTeacher);

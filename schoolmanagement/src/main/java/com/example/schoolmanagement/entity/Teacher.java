@@ -24,15 +24,23 @@ public class Teacher {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "username", nullable = false)
+    private String username;
+
+    @Column(name = "password", nullable = false)
+    private String password;
+
     public Teacher() {
 
     }
-        public Teacher(String firstName, String lastName, String email)
+        public Teacher(String firstName, String lastName, String email, String username, String password)
         {
             super();
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
+            this.username = username;
+            this.password = password;
         }
         public Long getId() {
             return id;
@@ -58,5 +66,17 @@ public class Teacher {
         public void setEmail(String email) {
             this.email = email;
         }
-    }
+        public String getUsername() {
+            return username;
+        }
+        public void setUsername(String username) {
+            this.username = username;
+        }
+        public String getPassword() {
+            return password;
+        }
+        public void setPassword(String password) {
+            this.password = password;
+        }
+}
 

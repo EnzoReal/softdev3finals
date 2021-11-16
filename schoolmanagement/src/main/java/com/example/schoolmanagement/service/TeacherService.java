@@ -7,11 +7,11 @@ import com.example.schoolmanagement.entity.Teacher;
 public interface TeacherService {
     List<Teacher> getAllTeachers();
 
-    Teacher saveTeacher(Teacher student);
+    Teacher saveTeacher(Teacher teacher);
 
     Teacher getTeacherById(Long id);
 
-    Teacher updateTeacher(Teacher student);
+    Teacher updateTeacher(Teacher teacher);
 
     void deleteTeacherById(Long id);
 }
