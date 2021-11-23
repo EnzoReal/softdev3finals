@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Our Students</title>
+    <link rel="stylesheet" th:href="@{/studentteacher/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" th:href="@{/studentteacher/css/styles.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+</head>
+
+<body style="background: rgb(215,234,233);">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+        <div class="container"><a class="navbar-brand" th:href="@{/home}" style="font-family: 'Roboto Slab', serif;font-size: 22px;">We The Best University</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/students}">Student Management</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/teachers}">Teacher Management</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section id="gallery" class="photo-gallery" style="background: rgb(214,254,251);">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Our Students</h2>
+                    <p class="text-center">We The Best University have students that come from all sorts of backgrounds. Our students are encouraged to engage with one another and to voice out their opinions freely amongst one another so as to bring up a more nurturing and safe environment in which students feel quite welcome to use their freedom of speech. We welcome all to pursue their higher education here so that you may reach your full potential!</p>
+                </div>
+                <div class="row photos" data-bss-baguettebox="">
+                    <div class="col-sm-6 col-md-4 col-lg-3 align-self-center mx-auto item"><a th:href="@{/studentteacher/img/desk.jpg}"><img class="img-fluid" id="pic1" th:src="@{/studentteacher/img/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 align-self-center my-auto item"><a th:href="@{/studentteacher/img/building.jpg}"><img class="img-fluid" id="img2" th:src="@{/studentteacher/img/jeswin-thomas-guLAk5gqj-Y-unsplash.jpg}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 align-self-center mx-auto item"><a th:href="@{/studentteacher/img/loft.jpg}"><img class="img-fluid" id="img3" th:src="@{/studentteacher/img/mimi-thian-54uolC2jjm4-unsplash.jpg}"></a></div>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <footer class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li></li>
+                            <li><a th:href="@{/student_body}">Students</a></li>
+                            <li><a th:href="@{/teacher_body}">Faculty</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a th:href="@{/job_openings}">Job openings</a></li>
+                            <li><a th:href="@{/testimonials}">Testimonies&nbsp;</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/holyangel1933"><i class="icon ion-social-facebook"></i></a><a href="https://instagram.com/holyangel1933?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">We The Best© 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script th:src="@{/studentteacher/js/script.min.js}"></script>
+</body>
+
+</html>

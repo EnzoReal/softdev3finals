@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Learn More</title>
+    <link rel="stylesheet" th:href="@{/studentteacher/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" th:href="@{/studentteacher/css/styles.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+</head>
+
+<body style="background: rgb(215,234,233);">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+        <div class="container"><a class="navbar-brand" th:href="@{/home}" style="font-family: 'Roboto Slab', serif;font-size: 22px;">We The Best University</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/students}">Student Management</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/teachers}">Teacher Management</a></li>
+                </ul>
+            </div>
+            <div>
+                <section id="article" class="article-clean" style="background: rgb(211,238,241);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                                <div class="intro">
+                                    <h1 class="text-center">What Makes Us One of the Best?</h1>
+                                    <p class="text-center"><span class="by">by</span> <a href="#">Best Guy</a><span class="date">nov 23, 2021</span></p><img class="img-fluid" th:src="@{/studentteacher/img/wander-fleur-STfO4sEddYQ-unsplash.jpg}">
+                                </div>
+                                <div class="text">
+                                    <p>Our mission and vision is quite simple: <em>To bring out the best in everyone.</em> At our university, we believe that you will be quite surprised at how we conduct things here. We want the student to reach their full potential as we know how difficult entering adulthood can be. You need that time and the proper direction of your learning abilities to reach peak heights and even beyond that!&nbsp;</p>
+                                    <p>During this pandemic, it has proven quite a difficult time for us all to adjust to. Thankfully, through the hard work of our faculty and supportive student body, we were able to create online modules that are specifically tailored for the student to benefit and learn from and our teachers to work around their lesson plans so that all may benefit.</p>
+                                    <h2>What's Next?</h2>
+                                    <p>Many college students must have this question in mind as they graduate from their courses. But our university is tailored to work with the student to guide them down the proper path leading to their desired career. We <em>really listen</em> to our student body and without them, we wouldn't be the best. So please allow us to work with you and don't be shy to ask us any questions you may have through our official email. Thank you and stay the best guys!</p>
+                                    <figure class="figure d-block"><img class="figure-img" th:src="@{/studentteacher/img/matese-fields-pvHma684eEI-unsplash.jpg}">
+                                        <figcaption class="figure-caption">Where will your journey take you next?</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <footer class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li></li>
+                            <li><a th:href="@{/student_body}">Students</a></li>
+                            <li><a th:href="@{/teacher_body}">Faculty</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a th:href="@{/job_openings}">Job openings</a></li>
+                            <li><a th:href="@{/testimonials}">Testimonies&nbsp;</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/holyangel1933"><i class="icon ion-social-facebook"></i></a><a href="https://instagram.com/holyangel1933?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">We The Best© 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script th:src="@{/studentteacher/js/script.min.js}"></script>
+</body>
+
+</html>

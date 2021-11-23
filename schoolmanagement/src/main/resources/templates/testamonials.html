@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Testimonies</title>
+    <link rel="stylesheet" th:href="@{/studentteacher/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" th:href="@{/studentteacher/css/styles.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+</head>
+
+<body style="background: rgb(215,234,233);">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+        <div class="container"><a class="navbar-brand" th:href="@{/home}" style="font-family: 'Roboto Slab', serif;font-size: 22px;">We The Best University</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/students}">Student Management</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/teachers}">Teacher Management</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section id="gallery" class="photo-gallery" style="background: rgb(214,254,251);">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Testimonials</h2>
+                    <p class="text-center">We accept all forms of feedback regarding our university. This allows us to hear the community and to both take pride in what we excel in and also the time to work on what we need to improve on. By all means, please let us know how you feel.</p>
+                </div>
+            </div>
+            <div>
+                <section class="testimonials-clean" style="background: rgb(238, 244, 247);">
+                    <div class="container" id="testamonials">
+                        <div class="intro"></div>
+                        <div class="row people">
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">I'm glad I studied here and obtained my BS in Psych! There is no other university that was so fun and open to my opinions as this one!</p>
+                                </div>
+                                <div class="author"><img class="rounded-circle" th:src="@{/studentteacher/img/testimonials-1.jpg}">
+                                    <h5 class="name">Sally Hollins</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">Thanks to We The Best University, my two sons were both able to obtain their degrees and to go down their respective career paths. I couldn't be a more prouder dad.</p>
+                                </div>
+                                <div class="author"><img class="rounded-circle" th:src="@{/studentteacher/img/testimonials-2.jpg}">
+                                    <h5 class="name">Carl Kent</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">The laboratories and utilities that we had access to were just too many to count! The time I spent studying here really prepared me for my current job as a pharmacists.</p>
+                                </div>
+                                <div class="author"><img class="rounded-circle" th:src="@{/studentteacher/img/testimonials-3.jpg}">
+                                    <h5 class="name">Emily Clark</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li></li>
+                            <li><a th:href="@{/student_body}">Students</a></li>
+                            <li><a th:href="@{/teacher_body}">Faculty</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a th:href="@{/job_openings}">Job openings</a></li>
+                            <li><a th:href="@{/testimonials}">Testimonies&nbsp;</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/holyangel1933"><i class="icon ion-social-facebook"></i></a><a href="https://instagram.com/holyangel1933?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">We The Best© 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script th:src="@{/studentteacher/js/script.min.js}"></script>
+</body>
+
+</html>
